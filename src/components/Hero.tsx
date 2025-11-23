@@ -28,11 +28,13 @@ export const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Your Car Knows You
-            <span className="block text-primary mt-2">In 3 Seconds</span>
+          <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight">
+            <span className="text-white">Drive Like Never Before.</span>
+            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-2">
+              One Bracelet. Infinite Possibilities.
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
             The smart bracelet that transforms your driving experience with biometric recognition, gesture control, and personalized comfort.
           </p>
           
