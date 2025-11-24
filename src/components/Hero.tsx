@@ -26,19 +26,19 @@ export const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
       />
       
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="animate-fade-in">
+      <div className="relative z-10 container mx-auto px-4 py-20">
+        <div className="animate-fade-in max-w-2xl">
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight">
             <span className="text-white">Drive Like Never Before.</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-2">
               One Bracelet. Infinite Possibilities.
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-xl font-light">
             The smart bracelet that transforms your driving experience with biometric recognition, gesture control, and personalized comfort.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mb-6">
             <Input
               type="email"
               placeholder="Enter your email"
