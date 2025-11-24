@@ -60,7 +60,7 @@ export const DemoCTA = () => {
                 placeholder="Enter your email for demo access"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-14 text-lg bg-background/90 backdrop-blur"
+                className="flex-1 h-14 text-lg bg-background/90 backdrop-blur text-black placeholder:text-neutral-600"
                 required
               />
               <Button
