@@ -28,12 +28,12 @@ export const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="animate-fade-in max-w-2xl">
-          <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-relaxed">
-            <span className="block text-white whitespace-nowrap">Drive Like Never Before.</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-1">
+          <h1 className="font-display font-bold mb-6 leading-relaxed">
+            <span className="block text-white whitespace-nowrap text-6xl md:text-8xl">Drive Like Never Before.</span>
+            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-1 text-5xl md:text-7xl">
               One Bracelet.
             </span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-1">
+            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-1 text-5xl md:text-7xl">
               Infinite Possibilities.
             </span>
           </h1>
