@@ -20,7 +20,7 @@ const features = [
   {
     icon: Hand,
     title: "Gesture Control",
-    description: "Control navigation, music, and calls with intuitive hand gestures while driving safely—plus programmable buttons that trigger your favorite shortcuts.",
+    description: "Control navigation, music, and calls with intuitive hand gestures while driving safely—programmable actions and curated presets let you launch your favorite shortcuts instantly.",
   },
   {
     icon: Heart,
