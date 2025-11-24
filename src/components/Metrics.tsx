@@ -14,16 +14,16 @@ const metrics = [
     description: "Join thousands already experiencing the future",
   },
   {
-    icon: Zap,
+    icon: Shield,
     value: "99.9%",
     label: "Recognition Accuracy",
     description: "Advanced biometric technology you can trust",
   },
   {
-    icon: Shield,
-    value: "100%",
-    label: "Secure Connection",
-    description: "Bank-level encryption for your safety",
+    icon: Zap,
+    value: "12 min",
+    label: "Saved Daily",
+    description: "Gesture-controlled shortcuts shave minutes off every drive",
   },
 ];
 

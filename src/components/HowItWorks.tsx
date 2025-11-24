@@ -14,7 +14,7 @@ const steps = [
   {
     icon: Car,
     title: "Connect to Your Car",
-    description: "Pair the bracelet with your vehicle through the app's simple setup wizard.",
+    description: "Pair the bracelet with your vehicle through the app's simple setup wizard, then assign programmable buttons to trigger climate scenes, lighting, or navigation presets.",
   },
   {
     icon: CheckCircle,

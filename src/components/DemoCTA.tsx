@@ -1,21 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import lifestyleCar from "@/assets/lifestyle-car.jpg";
+import { useForm, ValidationError } from "@formspree/react";
 
 export const DemoCTA = () => {
   const [email, setEmail] = useState("");
+  const [state, handleSubmit] = useForm("xkgargey");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      // TODO: Save to database and track statistics
+  useEffect(() => {
+    if (state.succeeded) {
       toast.success("You're on the list! Check your email for demo access.");
       setEmail("");
     }
-  };
+  }, [state.succeeded]);
+
+  useEffect(() => {
+    if (state.errors && state.errors.length > 0) {
+      toast.error("Please check your email and try again.");
+    }
+  }, [state.errors]);
 
   return (
     <section className="py-20 bg-gradient-dark text-secondary-foreground relative overflow-hidden">
@@ -43,18 +49,30 @@ export const DemoCTA = () => {
             Get exclusive early access to our interactive demo. See how the smart bracelet transforms your driving experience.
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email for demo access"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 h-14 text-lg bg-background/90 backdrop-blur"
-              required
-            />
-            <Button type="submit" size="lg" className="h-14 px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow">
-              Get Demo Access <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 max-w-xl mx-auto"
+          >
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Input
+                type="email"
+                name="email"
+                placeholder="Enter your email for demo access"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 h-14 text-lg bg-background/90 backdrop-blur"
+                required
+              />
+              <Button
+                type="submit"
+                size="lg"
+                disabled={state.submitting}
+                className="h-14 px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow disabled:opacity-70"
+              >
+                Get Demo Access <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+            <ValidationError prefix="Email" field="email" errors={state.errors} className="text-left text-sm text-destructive" />
           </form>
           
           <p className="text-sm text-muted-foreground mt-6">

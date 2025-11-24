@@ -9,8 +9,8 @@ const features = [
   },
   {
     icon: Fingerprint,
-    title: "Biometric Security",
-    description: "Advanced fingerprint and heart rate recognition ensures only you can access your vehicle.",
+    title: "Biometrics",
+    description: "Advanced fingerprint and live biometrics unlock the car and shift interiors to match your mood—adaptive lighting, music, and climate that respond in seconds.",
   },
   {
     icon: Settings,
@@ -20,7 +20,7 @@ const features = [
   {
     icon: Hand,
     title: "Gesture Control",
-    description: "Control navigation, music, and calls with intuitive hand gestures while driving safely.",
+    description: "Control navigation, music, and calls with intuitive hand gestures while driving safely—plus programmable buttons that trigger your favorite shortcuts.",
   },
   {
     icon: Heart,

@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'sans': ['Exo 2', 'system-ui', 'sans-serif'],
-        'display': ['Rajdhani', 'Exo 2', 'sans-serif'],
+        sans: ["Space Grotesk", "system-ui", "sans-serif"],
+        display: ["Orbitron", "Space Grotesk", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
