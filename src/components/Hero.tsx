@@ -29,7 +29,7 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="animate-fade-in max-w-2xl">
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-relaxed">
-            <span className="block text-white">Drive Like Never Before.</span>
+            <span className="block text-white whitespace-nowrap">Drive Like Never Before.</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mt-1">
               One Bracelet.
             </span>
